@@ -51,7 +51,12 @@ async function generateManifest() {
                 css: ['css/croptix.css', 'css/croptix-player.css', 'css/croptix-katamari.css'],
                 all_frames: true
             }
-        ]
+        ],
+        browser_specific_settings: {
+            gecko: {
+                id: 'ext@example.com'
+            }
+        }
     }
 
     await mkdir(dirname(manifestPath), { recursive: true })
