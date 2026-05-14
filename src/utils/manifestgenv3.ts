@@ -52,11 +52,6 @@ async function generateManifest() {
                 all_frames: true
             }
         ],
-        browser_specific_settings: {
-            gecko: {
-                id: 'ext@example.com'
-            }
-        }
     }
 
     await mkdir(dirname(manifestPath), { recursive: true })
