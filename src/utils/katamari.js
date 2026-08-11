@@ -22522,7 +22522,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                                       .then(i.bind(i, BIT_B))
                                                       .then((e) => {
                                                           let r = resolveEngine(e, 'BitmovinMediaEngine')
-                                                          let t = new r(s, this._tokenProvider)
+                                                          let t = new r(s, this._tokenProvider, this.mediaEngineConfig)
                                                           return (a.push(t.textTrackRenderer), t)
                                                       })
                                     return (
